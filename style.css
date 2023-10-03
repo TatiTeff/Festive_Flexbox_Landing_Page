@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&family=Raleway&display=swap');
+/*font-family: 'Mountains of Christmas', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+/*font-family: 'Nunito Sans', sans-serif;/ */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.hero {
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    background-size: cover;
+    text-align: center;
+}
+
+/* Estilos y propiedades para la barra de navegación */
+.navbar {
+    height: 25%;
+    background-color: rgb(221, 231, 235);
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    flex-wrap: wrap;
+    gap: 10px; 
+}
+
+.lista0 {
+    width: 70%;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar a {
+    width: 70%; 
+    text-decoration: none;
+    background-color: #e74c3c;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    top: 10px;
+    border: 3px solid #f9ebd2;
+    border-radius: 10px;
+    position: relative;  
+}
+
+.navbar a img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.navbar p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.lista0 li a:hover {
+    background-color: green;
+    border-color: #fff;
+    transform: translateY(-3px);
+}
+
+/* Estilos y propiedades para el texto del header */
+.header_text h1 {
+    font-family: 'Mountains of Christmas', cursive;
+    font-size: 60px;
+    color: #e74c3c;
+    margin-top: 25px;
+    text-shadow: 8px 8px 10px #B0C4DE;
+}
+
+.parrafo1 {
+    font-family: 'Mountains of Christmas', cursive;
+    font-weight: bolder;
+    font-size: 28px;
+    color: green;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    text-shadow: 8px 8px 10px #B0C4DE;
+}
+
+/* Estilos y propiedades para las imágenes del header */
+.imagenes_navideñas {
+    margin: 40px;
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.imagenes_navideñas img {
+    width: 13%;
+    height:auto;
+    margin-bottom: 40px;
+}
+
+.imagenes_navideñas img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+
+/* Estilos y propiedades para la sección 1 */
+.section1 {
+    width: 100vw;
+    height: 100vh;
+    background-color:rgb(221, 231, 235);
+    padding: 30px;
+    align-items: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.section1_text_img,
+.imagen_section1 {
+    flex: 1;
+    text-align: center;
+    margin-top: 20px;
+    max-width: 50%;
+    max-height: 80%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Estilos y propiedades para las imágenes de la sección 1 */
+.section1_text_img img {
+    flex: 1;
+    width: 25%;
+    height: 40%;
+    margin: 10px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    object-fit: cover;
+}
+
+.imagen_section1 img {
+    flex: 1;
+    width: 80%;
+    height: auto;
+    margin: 10px;
+    border-radius: 10px;
+    border: 3px solid #fff;
+    object-fit: cover;
+}
+
+/* Estilos y propiedades para el texto h2 de todas las secciones*/
+h2 {
+    font-family: 'Mountains of Christmas', cursive;
+    font-weight: bold;
+    font-size: 36px;
+    color: green;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+    text-shadow: 8px 8px 10px #B0C4DE;
+}
+
+/* Estilos y propiedades para el parrafo de la sección 1*/
+.section1 p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: center;
+    margin: 20px;
+}
+
+/* Efecto para las imágenes de la sección 1 */
+.section1_text_img img:hover,
+.imagen_section1 img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+
+/* Estilos y propiedades para la sección 2*/
+.section2 {
+    width: 100vw;
+    height: 100vh;
+    background-color: #f9ebd2;
+    display: flex;
+    overflow: hidden;
+    text-align: center;
+    flex-direction: row;  
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Estilos y propiedades para el contenedor de las cards*/
+.actividades{
+    width: 100%;
+    height: 80%;
+    background-color:#f9ebd2;
+    margin-top: 20px;
+}
+
+.div_cuadrados {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Estilos y propiedades para las cards*/
+.cuadrado {
+    max-width: 20%;
+    max-height: 20%;
+    flex: 1;
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+    border: 3px solid rgb(221, 231, 235);
+    border-radius: 10px;
+    margin: 20px 10px;
+}
+
+/* Estilos y propiedades para todos los parrafos de la página*/
+p {
+    font-family: 'Mountains of Christmas';
+    font-weight: bold;
+    font-size: 24px;
+    color: #333;
+    margin-top: 5px;
+}
+
+/* Estilos y propiedades para las imágenes*/
+.cuadrado img {
+    max-width: 90%;
+    height: 80%; 
+    margin-bottom: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Estilos y propiedades para la sección 3*/
+.section3 {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(221, 231, 235);
+    align-items: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Estilos y propiedades del contenedor de las cards*/
+.promociones {
+    width: 100%;
+    height: 80%;
+    background-color:rgb(221, 231, 235);
+    margin-top: 20px;
+} 
+
+.div_cuadrados2 {
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Estilos y propiedades para las cards*/
+.cuad {
+    flex: 1;
+    max-width: 20%;
+    max-height: 90%;
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+    border: 3px solid #f9ebd2;
+    border-radius: 10px;
+    margin: 20px 10px;
+}
+
+/* Estilos y propiedades para las imágenes*/
+.cuad img {
+    max-width: 90%;
+    height: 80%; 
+    margin-bottom: 10px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Estilos y propiedades para unoo de los párrafos*/
+.section3 p.pm {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 12px;
+    color: #666;
+}
+
+
+/* Estilos y propiedades para la sección 4*/
+.section4 {
+    width: 100vw;
+    height: 100vh;
+    background-color: #f9ebd2;
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Estilos y propiedades para la imagen calendario*/
+.section4 .imagen6 {
+    max-width: 45%;
+    height: auto;
+    margin-top: 10px;
+    border: 3px solid #f9ebd2;
+    border-radius: 10px;
+}
+
+/* Estilos y propiedades para el párrafo de la sección 4*/
+.section4 p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    margin: 10px;
+}
+
+/* Estilos y propiedades para los contenedores*/
+.evento,
+.ubicacion {
+    flex: 1;
+    text-align: center;
+    margin: 10px;
+    background-color: #fff;
+    max-width: 50%;
+    max-height: 80%;
+    padding: 20px;
+    border: 3px solid rgb(221, 231, 235);
+    border-radius: 10px;
+}
+
+/* Efecto para las imágenes de las secciones 3, 4 y 5*/
+.section3 .cuad img:hover,
+.section4 .imagen6:hover,
+.cuadrado img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* Línea en la parte inferior de todas las secciones */
+.hero,
+.navbar,
+.section1, 
+.section2,
+.section3,
+.section4 {
+    border-bottom: 3px solid #fff;
+}
+
+/* Estilos y propiedades para el footer */
+footer {
+    width: 100%;
+    height: 20%;
+    background-color: #e74c3c;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0; 
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+footer h3 {
+    font-family: 'Mountains of Christmas';
+    font-size: 1.5em;
+    text-shadow: 8px 8px 10px #B0C4DE;
+}
+
+footer .lista {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer .lista li {
+    display: inline;
+}
+
+footer .lista a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+}
+
+/* Estilo predeterminado para los íconos */
+footer .lista i {
+    font-size: 28px;
+    color: #fff;
+    margin: 10px;
+}
+
+/* Estilo predeterminado para los íconos */
+footer .lista i:hover {
+    transform: scale(1.1);
+}
+
+/* Derechos de autor */
+footer p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+}
+
